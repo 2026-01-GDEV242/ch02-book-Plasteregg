@@ -37,12 +37,11 @@
         return pages;
     }
     // Printing Method
-    public void printAuthor()
+    public void printDetails()
     {
-    System.out.println("Author:"+author);    
+    System.out.println("Author:"+author);
+    System.out.println("Title:"+title);
+    System.out.println("Pages:"+pages);
     }
-    public void printTitle()
-    {
-        System.out.println("Title:"+title);
-    }
+    
 }
