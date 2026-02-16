@@ -30,4 +30,13 @@
     {
         return title;
     }
+    // Printing Method
+    public void printAuthor()
+    {
+    System.out.println("Author:"+author);    
+    }
+    public void printTitle()
+    {
+        System.out.println("Title:"+title);
+    }
 }
