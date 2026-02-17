@@ -14,17 +14,19 @@
     private int pages;
     private String refNumber;
     private int borrowed;
+    private final boolean courseText;
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages,boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages= bookPages;
         refNumber="";
         borrowed=0;
+        courseText=isCourseText;
     }
     // These accessors gets the Author name and Title of the Book,The Pages in the book and the Reference number and how many times a book was borrowed
     public String getAuthor()
@@ -65,6 +67,10 @@
     {
     return borrowed;
     }
+    public boolean isCourseText()
+    {
+    return courseText;
+    }
     // Printing Method
     public void printDetails()
     {
@@ -78,5 +84,6 @@
         System.out.println("Reference Number: ZZZ");
     }
     System.out.println("Times Borrowed: " + borrowed);
+    System.out.println("Course Text: " + courseText);
 }
 }
