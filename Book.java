@@ -39,7 +39,14 @@
     }
     public void setRefNumber(String ref) 
     {
+        if (ref != null && ref.length() >= 3)
+        {
         refNumber=ref;
+    }
+        else 
+        {
+        System.out.println("Error: Reference number must be at least 3 characters long.");
+    }
     }
     // Printing Method
     public void printDetails()
