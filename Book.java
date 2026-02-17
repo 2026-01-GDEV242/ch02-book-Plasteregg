@@ -12,7 +12,7 @@
     private String author;
     private String title;
     private int pages;
-
+    private String refNumber;
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -22,6 +22,7 @@
         author = bookAuthor;
         title = bookTitle;
         pages= bookPages;
+        refNumber="";
     }
     // These two accessors gets the Author name and Title of the Book
     public String getAuthor()
@@ -36,12 +37,17 @@
     {
         return pages;
     }
+    public void setRefNumber(String ref) 
+    {
+        refNumber=ref;
+    }
     // Printing Method
     public void printDetails()
     {
     System.out.println("Author:"+author);
     System.out.println("Title:"+title);
     System.out.println("Pages:"+pages);
+    System.out.println("Reference Number: " + refNumber);
     }
     
 }
