@@ -13,6 +13,7 @@
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
     /**
      * Set the author and title fields when this object
      * is constructed.
@@ -23,8 +24,9 @@
         title = bookTitle;
         pages= bookPages;
         refNumber="";
+        borrowed=0;
     }
-    // These two accessors gets the Author name and Title of the Book
+    // These accessors gets the Author name and Title of the Book,The Pages in the book and the Reference number and how many times a book was borrowed
     public String getAuthor()
     {
         return author;
@@ -47,6 +49,11 @@
         {
         System.out.println("Error: Reference number must be at least 3 characters long.");
     }
+    
+    }
+    public String getRefNumber()
+    {
+        return refNumber;
     }
     // Printing Method
     public void printDetails()
