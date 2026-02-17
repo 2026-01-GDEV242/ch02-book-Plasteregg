@@ -48,6 +48,10 @@
     System.out.println("Title:"+title);
     System.out.println("Pages:"+pages);
     System.out.println("Reference Number: " + refNumber);
+    if (refNumber.length() > 0) {
+        System.out.println("Reference Number: " + refNumber);
+    } else {
+        System.out.println("Reference Number: ZZZ");
     }
-    
+}
 }
