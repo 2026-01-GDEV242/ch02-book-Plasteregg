@@ -55,6 +55,16 @@
     {
         return refNumber;
     }
+    // this increments the borrow count
+    public void borrow()
+    {
+    borrowed++;
+    }
+    // this is the accessor for the borrowed field
+    public int getBorrowed()
+    {
+    return borrowed;
+    }
     // Printing Method
     public void printDetails()
     {
@@ -67,5 +77,6 @@
     } else {
         System.out.println("Reference Number: ZZZ");
     }
+    System.out.println("Times Borrowed: " + borrowed);
 }
 }
